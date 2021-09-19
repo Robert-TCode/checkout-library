@@ -10,6 +10,48 @@
 		AA8D96AB26F09EC40044CEF3 /* CheckoutLibraryTcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8D96A126F09EC30044CEF3 /* CheckoutLibraryTcode.framework */; };
 		AA8D96B026F09EC40044CEF3 /* CheckoutLibraryTcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8D96AF26F09EC40044CEF3 /* CheckoutLibraryTcodeTests.swift */; };
 		AA8D96B226F09EC40044CEF3 /* CheckoutLibraryTcode.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8D96A426F09EC30044CEF3 /* CheckoutLibraryTcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA8D96BC26F09EDE0044CEF3 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8D96BB26F09EDE0044CEF3 /* CheckoutViewController.swift */; };
+		AA8D96BE26F0D5360044CEF3 /* CheckoutViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8D96BD26F0D5360044CEF3 /* CheckoutViewControllerDelegate.swift */; };
+		AA8D96C026F0D58F0044CEF3 /* PayButtonProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8D96BF26F0D58F0044CEF3 /* PayButtonProperties.swift */; };
+		AA8D96C226F0D6C40044CEF3 /* CardDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8D96C126F0D6C40044CEF3 /* CardDetails.swift */; };
+		AA8D96C426F0D75B0044CEF3 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8D96C326F0D75B0044CEF3 /* APIProvider.swift */; };
+		AAD314D826F7087D0015789E /* RequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314D726F7087D0015789E /* RequestExecutor.swift */; };
+		AAD314DA26F708FE0015789E /* URLResponse+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314D926F708FE0015789E /* URLResponse+Extension.swift */; };
+		AAD314DD26F709270015789E /* CheckoutLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314DC26F709270015789E /* CheckoutLogger.swift */; };
+		AAD314E026F7098D0015789E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314DF26F7098D0015789E /* Logger.swift */; };
+		AAD314E226F709E20015789E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314E126F709E20015789E /* NetworkError.swift */; };
+		AAD314E426F70A020015789E /* DescriptiveError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314E326F70A020015789E /* DescriptiveError.swift */; };
+		AAD314E726F70AF00015789E /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314E626F70AF00015789E /* ConsoleLogger.swift */; };
+		AAD314E926F70C4E0015789E /* RequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314E826F70C4E0015789E /* RequestGenerator.swift */; };
+		AAD314EB26F712E00015789E /* PaymentInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314EA26F712E00015789E /* PaymentInstrument.swift */; };
+		AAD314ED26F713DC0015789E /* ResultInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314EC26F713DC0015789E /* ResultInterpreter.swift */; };
+		AAD314F026F717950015789E /* UIKitComponentsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314EF26F717950015789E /* UIKitComponentsGenerator.swift */; };
+		AAD314F326F717EF0015789E /* CheckoutLibraryTcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314F226F717EF0015789E /* CheckoutLibraryTcode.swift */; };
+		AAD314F726F719680015789E /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314F626F719680015789E /* JWTDecoder.swift */; };
+		AAD314F926F71B6D0015789E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314F826F71B6D0015789E /* UIView+Extension.swift */; };
+		AAD314FB26F71CF30015789E /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314FA26F71CF30015789E /* UIStackView+Extension.swift */; };
+		AAD314FD26F7255B0015789E /* CardDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314FC26F7255B0015789E /* CardDetailsView.swift */; };
+		AAD314FF26F72AF50015789E /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314FE26F72AF50015789E /* UILabel+Extension.swift */; };
+		AAD3150126F72B2A0015789E /* CardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3150026F72B2A0015789E /* CardContentView.swift */; };
+		AAD3150326F72BA90015789E /* CardBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3150226F72BA90015789E /* CardBackgroundView.swift */; };
+		AAD3152F26F732DD0015789E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD3152E26F732DD0015789E /* Images.xcassets */; };
+		AAD3153226F734A60015789E /* Bundle+CheckoutLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3153126F734A60015789E /* Bundle+CheckoutLibrary.swift */; };
+		AAD3153526F76A5C0015789E /* CardTextFieldsDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3153426F76A5C0015789E /* CardTextFieldsDelegates.swift */; };
+		AAD3153726F76AB10015789E /* DesignSystem+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3153626F76AB10015789E /* DesignSystem+Colors.swift */; };
+		AAD3154026F773C70015789E /* CheckoutViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3153F26F773C70015789E /* CheckoutViewControllerTests.swift */; };
+		AAD3154226F776D30015789E /* MockUIComponentsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3154126F776D30015789E /* MockUIComponentsGenerator.swift */; };
+		AAD3154526F777070015789E /* MockRequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3154426F777070015789E /* MockRequestGenerator.swift */; };
+		AAD3154726F777240015789E /* MockRequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3154626F777240015789E /* MockRequestExecutor.swift */; };
+		AAD3154926F777390015789E /* MockResultInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3154826F777390015789E /* MockResultInterpreter.swift */; };
+		AAD3154B26F777520015789E /* MockAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3154A26F777520015789E /* MockAPIProvider.swift */; };
+		AAD3155226F77FCB0015789E /* MockCheckoutViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3155126F77FCB0015789E /* MockCheckoutViewControllerDelegate.swift */; };
+		AAD3155426F781E30015789E /* CardExpirationDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3155326F781E30015789E /* CardExpirationDateTests.swift */; };
+		AAD3155726F783490015789E /* UIKitComponentsGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3155626F783490015789E /* UIKitComponentsGeneratorTests.swift */; };
+		AAD3155D26F785A70015789E /* APIProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3155C26F785A70015789E /* APIProviderTests.swift */; };
+		AAD3156226F786760015789E /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3156126F786760015789E /* TestConstants.swift */; };
+		AAD3156826F790060015789E /* RequestGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3156726F790060015789E /* RequestGeneratorTests.swift */; };
+		AAD3156B26F790E00015789E /* RequestExecutorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3156A26F790E00015789E /* RequestExecutorTests.swift */; };
+		AAD3156D26F7BBFD0015789E /* ResultInterpreterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3156C26F7BBFD0015789E /* ResultInterpreterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +71,48 @@
 		AA8D96AA26F09EC40044CEF3 /* CheckoutLibraryTcodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckoutLibraryTcodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA8D96AF26F09EC40044CEF3 /* CheckoutLibraryTcodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutLibraryTcodeTests.swift; sourceTree = "<group>"; };
 		AA8D96B126F09EC40044CEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA8D96BB26F09EDE0044CEF3 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		AA8D96BD26F0D5360044CEF3 /* CheckoutViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewControllerDelegate.swift; sourceTree = "<group>"; };
+		AA8D96BF26F0D58F0044CEF3 /* PayButtonProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayButtonProperties.swift; sourceTree = "<group>"; };
+		AA8D96C126F0D6C40044CEF3 /* CardDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetails.swift; sourceTree = "<group>"; };
+		AA8D96C326F0D75B0044CEF3 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		AAD314D726F7087D0015789E /* RequestExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExecutor.swift; sourceTree = "<group>"; };
+		AAD314D926F708FE0015789E /* URLResponse+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLResponse+Extension.swift"; sourceTree = "<group>"; };
+		AAD314DC26F709270015789E /* CheckoutLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutLogger.swift; sourceTree = "<group>"; };
+		AAD314DF26F7098D0015789E /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		AAD314E126F709E20015789E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		AAD314E326F70A020015789E /* DescriptiveError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptiveError.swift; sourceTree = "<group>"; };
+		AAD314E626F70AF00015789E /* ConsoleLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
+		AAD314E826F70C4E0015789E /* RequestGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGenerator.swift; sourceTree = "<group>"; };
+		AAD314EA26F712E00015789E /* PaymentInstrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInstrument.swift; sourceTree = "<group>"; };
+		AAD314EC26F713DC0015789E /* ResultInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultInterpreter.swift; sourceTree = "<group>"; };
+		AAD314EF26F717950015789E /* UIKitComponentsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitComponentsGenerator.swift; sourceTree = "<group>"; };
+		AAD314F226F717EF0015789E /* CheckoutLibraryTcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutLibraryTcode.swift; sourceTree = "<group>"; };
+		AAD314F626F719680015789E /* JWTDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
+		AAD314F826F71B6D0015789E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		AAD314FA26F71CF30015789E /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		AAD314FC26F7255B0015789E /* CardDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsView.swift; sourceTree = "<group>"; };
+		AAD314FE26F72AF50015789E /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		AAD3150026F72B2A0015789E /* CardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContentView.swift; sourceTree = "<group>"; };
+		AAD3150226F72BA90015789E /* CardBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackgroundView.swift; sourceTree = "<group>"; };
+		AAD3152E26F732DD0015789E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AAD3153126F734A60015789E /* Bundle+CheckoutLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+CheckoutLibrary.swift"; sourceTree = "<group>"; };
+		AAD3153426F76A5C0015789E /* CardTextFieldsDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTextFieldsDelegates.swift; sourceTree = "<group>"; };
+		AAD3153626F76AB10015789E /* DesignSystem+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DesignSystem+Colors.swift"; sourceTree = "<group>"; };
+		AAD3153F26F773C70015789E /* CheckoutViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewControllerTests.swift; sourceTree = "<group>"; };
+		AAD3154126F776D30015789E /* MockUIComponentsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUIComponentsGenerator.swift; sourceTree = "<group>"; };
+		AAD3154426F777070015789E /* MockRequestGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequestGenerator.swift; sourceTree = "<group>"; };
+		AAD3154626F777240015789E /* MockRequestExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequestExecutor.swift; sourceTree = "<group>"; };
+		AAD3154826F777390015789E /* MockResultInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResultInterpreter.swift; sourceTree = "<group>"; };
+		AAD3154A26F777520015789E /* MockAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIProvider.swift; sourceTree = "<group>"; };
+		AAD3155126F77FCB0015789E /* MockCheckoutViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCheckoutViewControllerDelegate.swift; sourceTree = "<group>"; };
+		AAD3155326F781E30015789E /* CardExpirationDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardExpirationDateTests.swift; sourceTree = "<group>"; };
+		AAD3155626F783490015789E /* UIKitComponentsGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitComponentsGeneratorTests.swift; sourceTree = "<group>"; };
+		AAD3155C26F785A70015789E /* APIProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProviderTests.swift; sourceTree = "<group>"; };
+		AAD3156126F786760015789E /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		AAD3156726F790060015789E /* RequestGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGeneratorTests.swift; sourceTree = "<group>"; };
+		AAD3156A26F790E00015789E /* RequestExecutorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExecutorTests.swift; sourceTree = "<group>"; };
+		AAD3156C26F7BBFD0015789E /* ResultInterpreterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultInterpreterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +156,11 @@
 			isa = PBXGroup;
 			children = (
 				AA8D96A426F09EC30044CEF3 /* CheckoutLibraryTcode.h */,
+				AA8D96C526F0D7710044CEF3 /* Interface */,
+				AA8D96C626F0D7780044CEF3 /* Models */,
+				AA8D96C726F0D77E0044CEF3 /* Services */,
+				AAD3153026F732E20015789E /* Resources */,
+				AAD314E526F70A060015789E /* Utils */,
 				AA8D96A526F09EC30044CEF3 /* Info.plist */,
 			);
 			path = CheckoutLibraryTcode;
@@ -80,10 +169,199 @@
 		AA8D96AE26F09EC40044CEF3 /* CheckoutLibraryTcodeTests */ = {
 			isa = PBXGroup;
 			children = (
-				AA8D96AF26F09EC40044CEF3 /* CheckoutLibraryTcodeTests.swift */,
+				AAD3153E26F773170015789E /* Interface */,
+				AAD3154326F776E00015789E /* Mocks */,
+				AAD3155526F781E80015789E /* Models */,
+				AAD3155826F7834F0015789E /* Services */,
+				AAD3154E26F77CD60015789E /* Utils */,
 				AA8D96B126F09EC40044CEF3 /* Info.plist */,
 			);
 			path = CheckoutLibraryTcodeTests;
+			sourceTree = "<group>";
+		};
+		AA8D96C526F0D7710044CEF3 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				AAD314F226F717EF0015789E /* CheckoutLibraryTcode.swift */,
+				AA8D96BB26F09EDE0044CEF3 /* CheckoutViewController.swift */,
+				AA8D96BD26F0D5360044CEF3 /* CheckoutViewControllerDelegate.swift */,
+				AA8D96BF26F0D58F0044CEF3 /* PayButtonProperties.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		AA8D96C626F0D7780044CEF3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA8D96C126F0D6C40044CEF3 /* CardDetails.swift */,
+				AAD314EA26F712E00015789E /* PaymentInstrument.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA8D96C726F0D77E0044CEF3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AAD314F126F717980015789E /* UI */,
+				AAD314EE26F7178D0015789E /* API */,
+				AAD314DB26F7091C0015789E /* Network */,
+				AAD314DE26F7092E0015789E /* Logger */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AAD314DB26F7091C0015789E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AAD314E826F70C4E0015789E /* RequestGenerator.swift */,
+				AAD314D726F7087D0015789E /* RequestExecutor.swift */,
+				AAD314EC26F713DC0015789E /* ResultInterpreter.swift */,
+				AAD314D926F708FE0015789E /* URLResponse+Extension.swift */,
+				AAD314E126F709E20015789E /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AAD314DE26F7092E0015789E /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				AAD314DC26F709270015789E /* CheckoutLogger.swift */,
+				AAD314E626F70AF00015789E /* ConsoleLogger.swift */,
+				AAD314DF26F7098D0015789E /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		AAD314E526F70A060015789E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3153126F734A60015789E /* Bundle+CheckoutLibrary.swift */,
+				AAD314E326F70A020015789E /* DescriptiveError.swift */,
+				AAD314F626F719680015789E /* JWTDecoder.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AAD314EE26F7178D0015789E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AA8D96C326F0D75B0044CEF3 /* APIProvider.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AAD314F126F717980015789E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AAD314EF26F717950015789E /* UIKitComponentsGenerator.swift */,
+				AAD3153626F76AB10015789E /* DesignSystem+Colors.swift */,
+				AAD3153326F76A400015789E /* CardView */,
+				AAD3153826F76B890015789E /* UIElements+Extensions */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AAD3153026F732E20015789E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3152E26F732DD0015789E /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AAD3153326F76A400015789E /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				AAD314FC26F7255B0015789E /* CardDetailsView.swift */,
+				AAD3150026F72B2A0015789E /* CardContentView.swift */,
+				AAD3153426F76A5C0015789E /* CardTextFieldsDelegates.swift */,
+				AAD3150226F72BA90015789E /* CardBackgroundView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		AAD3153826F76B890015789E /* UIElements+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AAD314F826F71B6D0015789E /* UIView+Extension.swift */,
+				AAD314FA26F71CF30015789E /* UIStackView+Extension.swift */,
+				AAD314FE26F72AF50015789E /* UILabel+Extension.swift */,
+			);
+			path = "UIElements+Extensions";
+			sourceTree = "<group>";
+		};
+		AAD3153E26F773170015789E /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				AA8D96AF26F09EC40044CEF3 /* CheckoutLibraryTcodeTests.swift */,
+				AAD3153F26F773C70015789E /* CheckoutViewControllerTests.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		AAD3154326F776E00015789E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3154126F776D30015789E /* MockUIComponentsGenerator.swift */,
+				AAD3154426F777070015789E /* MockRequestGenerator.swift */,
+				AAD3154626F777240015789E /* MockRequestExecutor.swift */,
+				AAD3154826F777390015789E /* MockResultInterpreter.swift */,
+				AAD3154A26F777520015789E /* MockAPIProvider.swift */,
+				AAD3155126F77FCB0015789E /* MockCheckoutViewControllerDelegate.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		AAD3154E26F77CD60015789E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3156126F786760015789E /* TestConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AAD3155526F781E80015789E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3155326F781E30015789E /* CardExpirationDateTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AAD3155826F7834F0015789E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3155B26F785930015789E /* UI */,
+				AAD3155E26F785AD0015789E /* API */,
+				AAD3156926F790090015789E /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AAD3155B26F785930015789E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3155626F783490015789E /* UIKitComponentsGeneratorTests.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AAD3155E26F785AD0015789E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3155C26F785A70015789E /* APIProviderTests.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AAD3156926F790090015789E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3156726F790060015789E /* RequestGeneratorTests.swift */,
+				AAD3156A26F790E00015789E /* RequestExecutorTests.swift */,
+				AAD3156C26F7BBFD0015789E /* ResultInterpreterTests.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +386,7 @@
 				AA8D969D26F09EC30044CEF3 /* Sources */,
 				AA8D969E26F09EC30044CEF3 /* Frameworks */,
 				AA8D969F26F09EC30044CEF3 /* Resources */,
+				AAD3153D26F76C4B0015789E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -147,6 +426,7 @@
 				TargetAttributes = {
 					AA8D96A026F09EC30044CEF3 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					AA8D96A926F09EC40044CEF3 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -177,6 +457,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD3152F26F732DD0015789E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,11 +470,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AAD3153D26F76C4B0015789E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AA8D969D26F09EC30044CEF3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD314FF26F72AF50015789E /* UILabel+Extension.swift in Sources */,
+				AAD314D826F7087D0015789E /* RequestExecutor.swift in Sources */,
+				AAD314F026F717950015789E /* UIKitComponentsGenerator.swift in Sources */,
+				AA8D96C226F0D6C40044CEF3 /* CardDetails.swift in Sources */,
+				AAD3153726F76AB10015789E /* DesignSystem+Colors.swift in Sources */,
+				AA8D96BC26F09EDE0044CEF3 /* CheckoutViewController.swift in Sources */,
+				AAD3153526F76A5C0015789E /* CardTextFieldsDelegates.swift in Sources */,
+				AAD314DA26F708FE0015789E /* URLResponse+Extension.swift in Sources */,
+				AAD314E026F7098D0015789E /* Logger.swift in Sources */,
+				AA8D96C426F0D75B0044CEF3 /* APIProvider.swift in Sources */,
+				AA8D96BE26F0D5360044CEF3 /* CheckoutViewControllerDelegate.swift in Sources */,
+				AAD314F726F719680015789E /* JWTDecoder.swift in Sources */,
+				AAD314EB26F712E00015789E /* PaymentInstrument.swift in Sources */,
+				AAD314FD26F7255B0015789E /* CardDetailsView.swift in Sources */,
+				AAD314E926F70C4E0015789E /* RequestGenerator.swift in Sources */,
+				AA8D96C026F0D58F0044CEF3 /* PayButtonProperties.swift in Sources */,
+				AAD3153226F734A60015789E /* Bundle+CheckoutLibrary.swift in Sources */,
+				AAD314F926F71B6D0015789E /* UIView+Extension.swift in Sources */,
+				AAD314FB26F71CF30015789E /* UIStackView+Extension.swift in Sources */,
+				AAD3150326F72BA90015789E /* CardBackgroundView.swift in Sources */,
+				AAD3150126F72B2A0015789E /* CardContentView.swift in Sources */,
+				AAD314DD26F709270015789E /* CheckoutLogger.swift in Sources */,
+				AAD314F326F717EF0015789E /* CheckoutLibraryTcode.swift in Sources */,
+				AAD314ED26F713DC0015789E /* ResultInterpreter.swift in Sources */,
+				AAD314E726F70AF00015789E /* ConsoleLogger.swift in Sources */,
+				AAD314E226F709E20015789E /* NetworkError.swift in Sources */,
+				AAD314E426F70A020015789E /* DescriptiveError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +529,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD3156B26F790E00015789E /* RequestExecutorTests.swift in Sources */,
+				AAD3155726F783490015789E /* UIKitComponentsGeneratorTests.swift in Sources */,
+				AAD3154026F773C70015789E /* CheckoutViewControllerTests.swift in Sources */,
+				AAD3155D26F785A70015789E /* APIProviderTests.swift in Sources */,
+				AAD3155226F77FCB0015789E /* MockCheckoutViewControllerDelegate.swift in Sources */,
+				AAD3154726F777240015789E /* MockRequestExecutor.swift in Sources */,
 				AA8D96B026F09EC40044CEF3 /* CheckoutLibraryTcodeTests.swift in Sources */,
+				AAD3156226F786760015789E /* TestConstants.swift in Sources */,
+				AAD3154926F777390015789E /* MockResultInterpreter.swift in Sources */,
+				AAD3155426F781E30015789E /* CardExpirationDateTests.swift in Sources */,
+				AAD3154226F776D30015789E /* MockUIComponentsGenerator.swift in Sources */,
+				AAD3154B26F777520015789E /* MockAPIProvider.swift in Sources */,
+				AAD3156826F790060015789E /* RequestGeneratorTests.swift in Sources */,
+				AAD3156D26F7BBFD0015789E /* ResultInterpreterTests.swift in Sources */,
+				AAD3154526F777070015789E /* MockRequestGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +610,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +668,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +683,7 @@
 		AA8D96B626F09EC40044CEF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 25258ALHUD;
@@ -357,6 +700,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tcode.CheckoutLibraryTcode;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +709,7 @@
 		AA8D96B726F09EC40044CEF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 25258ALHUD;
@@ -389,6 +734,7 @@
 		AA8D96B926F09EC40044CEF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 25258ALHUD;
 				INFOPLIST_FILE = CheckoutLibraryTcodeTests/Info.plist;
@@ -407,6 +753,7 @@
 		AA8D96BA26F09EC40044CEF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 25258ALHUD;
 				INFOPLIST_FILE = CheckoutLibraryTcodeTests/Info.plist;

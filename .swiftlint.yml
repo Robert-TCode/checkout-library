@@ -1,0 +1,23 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+
+disabled_rules:
+  - trailing_whitespace
+  - type_name
+  - force_try
+  - force_cast
+  - todo
+
+# customised rules
+line_length:
+  warning: 180
+  error: 200
+type_body_length:
+  warning: 300
+  error: 400
+identifier_name:
+  allowed_symbols: "_"
+  min_length: 2
+  max_length:
+    warning: 50
+    error: 70
