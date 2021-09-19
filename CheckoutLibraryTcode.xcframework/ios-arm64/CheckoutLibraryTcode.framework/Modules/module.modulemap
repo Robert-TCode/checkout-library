@@ -1,0 +1,11 @@
+framework module CheckoutLibraryTcode {
+  umbrella header "CheckoutLibraryTcode.h"
+
+  export *
+  module * { export * }
+}
+
+module CheckoutLibraryTcode.Swift {
+    header "CheckoutLibraryTcode-Swift.h"
+    requires objc
+}
