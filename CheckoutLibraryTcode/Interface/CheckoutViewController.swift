@@ -22,17 +22,31 @@ import UIKit
 
     // MARK: Intialization and Lifecycle
 
-    /// Initializes a `CheckoutViewController` with custom UI properties if given.
+    /// Initializes a `CheckoutViewController` with the default UI properties.
+    @objc public init() {
+        self.logoImage = UIImage(named: "default-logo", in: Bundle.module, compatibleWith: nil)!
+        self.payButtonProperties = PayButtonProperties()
+
+        // Compose main elements
+        uiComponentsGenerator = UIKitComponentsGenerator()
+        requestGenerator = RequestGenerator()
+        requestExecutor = RequestExecutor()
+        resultInterpreting = ResultInterpreter()
+        apiProvider = APIProvider(requestGenerator: requestGenerator, requestExecutor: requestExecutor, resultInterpretor: resultInterpreting)
+
+        super.init(nibName: nil, bundle: nil)
+
+        setUpSubviews()
+    }
+
+    /// Initializes a `CheckoutViewController` with custom UI properties.
     /// - Parameters:
     ///   - logoImage: The logo to be displayed in the checkout view. If missing, the default logo is being used.
-    ///   - payButtonProperties: The properties of the Pay button in the checkout view. If missing, the default properties are being used.
-    @objc public init(logoImage: UIImage? = nil,
-                      payButtonProperties: PayButtonProperties = PayButtonProperties()) {
-        if let validLogo = logoImage {
-            self.logoImage = validLogo
-        } else {
-            self.logoImage = UIImage(named: "default-logo", in: Bundle.module, compatibleWith: nil)!
-        }
+    ///   - payButtonProperties: The properties of the Pay button in the checkout view.
+    @objc public init(logoImage: UIImage,
+                      payButtonProperties: PayButtonProperties) {
+
+        self.logoImage = logoImage
         self.payButtonProperties = payButtonProperties
 
         // Compose main elements

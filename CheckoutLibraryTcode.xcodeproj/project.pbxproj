@@ -26,7 +26,7 @@
 		AAD314EB26F712E00015789E /* PaymentInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314EA26F712E00015789E /* PaymentInstrument.swift */; };
 		AAD314ED26F713DC0015789E /* ResultInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314EC26F713DC0015789E /* ResultInterpreter.swift */; };
 		AAD314F026F717950015789E /* UIKitComponentsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314EF26F717950015789E /* UIKitComponentsGenerator.swift */; };
-		AAD314F326F717EF0015789E /* CheckoutLibraryTcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314F226F717EF0015789E /* CheckoutLibraryTcode.swift */; };
+		AAD314F326F717EF0015789E /* CheckoutLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314F226F717EF0015789E /* CheckoutLibrary.swift */; };
 		AAD314F726F719680015789E /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314F626F719680015789E /* JWTDecoder.swift */; };
 		AAD314F926F71B6D0015789E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314F826F71B6D0015789E /* UIView+Extension.swift */; };
 		AAD314FB26F71CF30015789E /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD314FA26F71CF30015789E /* UIStackView+Extension.swift */; };
@@ -87,7 +87,7 @@
 		AAD314EA26F712E00015789E /* PaymentInstrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInstrument.swift; sourceTree = "<group>"; };
 		AAD314EC26F713DC0015789E /* ResultInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultInterpreter.swift; sourceTree = "<group>"; };
 		AAD314EF26F717950015789E /* UIKitComponentsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitComponentsGenerator.swift; sourceTree = "<group>"; };
-		AAD314F226F717EF0015789E /* CheckoutLibraryTcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutLibraryTcode.swift; sourceTree = "<group>"; };
+		AAD314F226F717EF0015789E /* CheckoutLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutLibrary.swift; sourceTree = "<group>"; };
 		AAD314F626F719680015789E /* JWTDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
 		AAD314F826F71B6D0015789E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		AAD314FA26F71CF30015789E /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 		AA8D96C526F0D7710044CEF3 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				AAD314F226F717EF0015789E /* CheckoutLibraryTcode.swift */,
+				AAD314F226F717EF0015789E /* CheckoutLibrary.swift */,
 				AA8D96BB26F09EDE0044CEF3 /* CheckoutViewController.swift */,
 				AA8D96BD26F0D5360044CEF3 /* CheckoutViewControllerDelegate.swift */,
 				AA8D96BF26F0D58F0044CEF3 /* PayButtonProperties.swift */,
@@ -517,7 +517,7 @@
 				AAD3150326F72BA90015789E /* CardBackgroundView.swift in Sources */,
 				AAD3150126F72B2A0015789E /* CardContentView.swift in Sources */,
 				AAD314DD26F709270015789E /* CheckoutLogger.swift in Sources */,
-				AAD314F326F717EF0015789E /* CheckoutLibraryTcode.swift in Sources */,
+				AAD314F326F717EF0015789E /* CheckoutLibrary.swift in Sources */,
 				AAD314ED26F713DC0015789E /* ResultInterpreter.swift in Sources */,
 				AAD314E726F70AF00015789E /* ConsoleLogger.swift in Sources */,
 				AAD314E226F709E20015789E /* NetworkError.swift in Sources */,

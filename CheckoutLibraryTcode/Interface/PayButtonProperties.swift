@@ -15,6 +15,24 @@ import UIKit
     var fontWeight: UIFont.Weight
     var fontColor: UIColor
 
+    // Note: There are 2 different initializers (one without parameters and one with parameters)
+    // instead of a single one with default values for optional parameters
+    // because when the Swift interface of the XCFramework is created, the initializer is modified
+    // and a run-time error saying the initializer is not implemented is being produced.
+    // Same thing happens with the CheckoutViewController.
+
+    /// Initializes the custom UI for the Pay button of the `CheckoutViewController`.
+    @objc public override init() {
+        self.size = CGSize(width: 120, height: 44)
+        self.color = .black
+        self.cornerRadius = 8
+        self.font = UIFont(name: "HelveticaNeue-Medium", size: 17)!
+        self.fontSize = 16
+        self.fontWeight = .medium
+        self.fontColor = .white
+        super.init()
+    }
+
     /// Initializes the custom UI for the Pay button of the `CheckoutViewController`.
     /// - Parameters:
     ///   - size: The size of the button.

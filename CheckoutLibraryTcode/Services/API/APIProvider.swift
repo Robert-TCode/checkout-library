@@ -21,7 +21,7 @@ class APIProvider: APIProviding {
     let paymentInstrumentsPath = "payment-instruments"
 
     var accessToken: String? {
-        CheckoutLibraryTcode.getAccessToken()
+        CheckoutLibrary.getAccessToken()
     }
     
     let requestGenerator: RequestGenerating

@@ -3,14 +3,14 @@
 import Foundation
 
 /// The entry point of the `CheckoutLibraryTcode` library.
-@objc public class CheckoutLibraryTcode: NSObject {
+@objc public class CheckoutLibrary: NSObject {
 
     // MARK: Properties
 
     private var clientToken: String?
     private var accessToken: String?
 
-    private static let shared = CheckoutLibraryTcode()
+    private static let shared = CheckoutLibrary()
 
     private override init() { }
 
