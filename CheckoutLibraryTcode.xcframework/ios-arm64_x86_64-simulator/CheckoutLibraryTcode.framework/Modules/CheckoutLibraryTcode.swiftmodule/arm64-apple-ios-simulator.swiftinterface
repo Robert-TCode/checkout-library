@@ -5,19 +5,22 @@
 import Foundation
 import Swift
 import UIKit
-@objc @_hasMissingDesignatedInitializers public class CheckoutViewController : UIKit.UIViewController {
-  weak public var delegate: CheckoutLibraryTcode.CheckoutViewControllerDelegate?
-  public init(logoImage: UIKit.UIImage? = nil, payButtonProperties: CheckoutLibraryTcode.PayButtonProperties = PayButtonProperties())
+@_hasMissingDesignatedInitializers @objc public class CheckoutViewController : UIKit.UIViewController {
+  @objc weak public var delegate: CheckoutLibraryTcode.CheckoutViewControllerDelegate?
+  @objc dynamic public init()
+  @objc public init(logoImage: UIKit.UIImage, payButtonProperties: CheckoutLibraryTcode.PayButtonProperties)
   @objc override dynamic public func viewDidLoad()
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc deinit
 }
-public protocol CheckoutViewControllerDelegate : AnyObject {
-  func didGeneratePaymentToken(_ token: Swift.String, viewController: CheckoutLibraryTcode.CheckoutViewController)
-  func tokenGenerationFailed(with error: Swift.Error)
+@objc public protocol CheckoutViewControllerDelegate {
+  @objc func didGeneratePaymentToken(_ token: Swift.String, viewController: CheckoutLibraryTcode.CheckoutViewController)
+  @objc func tokenGenerationFailed(with error: Swift.Error)
 }
-public struct PayButtonProperties {
-  public init(size: CoreGraphics.CGSize = CGSize(width: 120, height: 44), color: UIKit.UIColor = .black, cornerRadius: CoreGraphics.CGFloat = 8, font: UIKit.UIFont = UIFont(name: "HelveticaNeue-Medium", size: 17)!, fontSize: CoreGraphics.CGFloat = 16, fontWeight: UIKit.UIFont.Weight = .medium, fontColor: UIKit.UIColor = .white)
+@_inheritsConvenienceInitializers @objc public class PayButtonProperties : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public init(size: CoreGraphics.CGSize = CGSize(width: 120, height: 44), color: UIKit.UIColor = .black, cornerRadius: CoreGraphics.CGFloat = 8, font: UIKit.UIFont = UIFont(name: "HelveticaNeue-Medium", size: 17)!, fontSize: CoreGraphics.CGFloat = 16, fontWeight: UIKit.UIFont.Weight = .medium, fontColor: UIKit.UIColor = .white)
+  @objc deinit
 }
 extension UIView {
   public func pinToSuperview()
@@ -29,7 +32,7 @@ extension UIView {
 extension UIStackView {
   public func addArrangedSubviews(_ views: [UIKit.UIView])
 }
-@_hasMissingDesignatedInitializers public class CheckoutLibraryTcode {
-  public static func configure(clientToken: Swift.String)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class CheckoutLibrary : ObjectiveC.NSObject {
+  @objc public static func configure(clientToken: Swift.String)
   @objc deinit
 }

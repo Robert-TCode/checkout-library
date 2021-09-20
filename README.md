@@ -9,7 +9,7 @@ Once distribution is done, use your dependency manager to add the Checkout Libra
 2. In the entry point of your application (usually `AppDelegate` or @main `AppName.swift` for SwiftUI apps), import the library and configure it as follows using your client token.
 
 `import CheckoutLibraryTcode`
-`CheckoutLibraryTcode.configure(clientToken: clientToken)`
+`CheckoutLibrary.configure(clientToken: clientToken)`
 
 3. In order to generate a client token, use your API key is a request with the following formet:
 

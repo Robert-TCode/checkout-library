@@ -190,6 +190,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -209,17 +211,85 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-@class NSCoder;
 @class NSString;
+
+/// The entry point of the <code>CheckoutLibraryTcode</code> library.
+SWIFT_CLASS("_TtC20CheckoutLibraryTcode15CheckoutLibrary")
+@interface CheckoutLibrary : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Configured the Checkout library with a unique client token.
+/// \param clientToken The client token to be used for payment token generation.
+///
++ (void)configureWithClientToken:(NSString * _Nonnull)clientToken;
+@end
+
+@protocol CheckoutViewControllerDelegate;
+@class UIImage;
+@class PayButtonProperties;
+@class NSCoder;
 @class NSBundle;
 
 /// A <code>ViewController</code> responsible for the UI and functionality of the checkout process.
 SWIFT_CLASS("_TtC20CheckoutLibraryTcode22CheckoutViewController")
 @interface CheckoutViewController : UIViewController
+/// The delegate providing callbacks for payment token generation.
+@property (nonatomic, weak) id <CheckoutViewControllerDelegate> _Nullable delegate;
+/// Initializes a <code>CheckoutViewController</code> with the default UI properties.
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Initializes a <code>CheckoutViewController</code> with custom UI properties.
+/// \param logoImage The logo to be displayed in the checkout view. If missing, the default logo is being used.
+///
+/// \param payButtonProperties The properties of the Pay button in the checkout view.
+///
+- (nonnull instancetype)initWithLogoImage:(UIImage * _Nonnull)logoImage payButtonProperties:(PayButtonProperties * _Nonnull)payButtonProperties OBJC_DESIGNATED_INITIALIZER;
 /// Initializes a <code>CheckoutViewController</code> with the default UI properties.
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+/// A protocol providing updates on payment tokens generation.
+SWIFT_PROTOCOL("_TtP20CheckoutLibraryTcode30CheckoutViewControllerDelegate_")
+@protocol CheckoutViewControllerDelegate
+/// Called when a payment token has been generated using the payment details provided in the <code>CheckoutViewController</code>.
+/// \param token The unique token of the payment.
+///
+/// \param viewController The <code>CheckoutViewController</code> used for collecting payment method details.
+///
+- (void)didGeneratePaymentToken:(NSString * _Nonnull)token viewController:(CheckoutViewController * _Nonnull)viewController;
+/// Called when a payment token generation fails.
+/// \param error An error describing the reason of the failure.
+///
+- (void)tokenGenerationFailedWith:(NSError * _Nonnull)error;
+@end
+
+@class UIColor;
+@class NSNumber;
+@class UIFont;
+
+/// Pay button visual attributes.
+SWIFT_CLASS("_TtC20CheckoutLibraryTcode19PayButtonProperties")
+@interface PayButtonProperties : NSObject
+/// Initializes the custom UI for the Pay button of the <code>CheckoutViewController</code>.
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Initializes the custom UI for the Pay button of the <code>CheckoutViewController</code>.
+/// \param size The size of the button.
+///
+/// \param color The size of the button.
+///
+/// \param cornerRadius The corner radius value for button’s edges.
+///
+/// \param font The font used for the button’s title.
+///
+/// \param fontSize The font size used for the button’s title.
+///
+/// \param fontWeight The weight of the font used for the button’s title.
+///
+/// \param fontColor The color of the button’s title.
+///
+- (nonnull instancetype)initWithSize:(CGSize)size color:(UIColor * _Nonnull)color cornerRadius:(CGFloat)cornerRadius font:(UIFont * _Nonnull)font fontSize:(CGFloat)fontSize fontWeight:(UIFontWeight)fontWeight fontColor:(UIColor * _Nonnull)fontColor OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -423,6 +493,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -442,17 +514,85 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-@class NSCoder;
 @class NSString;
+
+/// The entry point of the <code>CheckoutLibraryTcode</code> library.
+SWIFT_CLASS("_TtC20CheckoutLibraryTcode15CheckoutLibrary")
+@interface CheckoutLibrary : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Configured the Checkout library with a unique client token.
+/// \param clientToken The client token to be used for payment token generation.
+///
++ (void)configureWithClientToken:(NSString * _Nonnull)clientToken;
+@end
+
+@protocol CheckoutViewControllerDelegate;
+@class UIImage;
+@class PayButtonProperties;
+@class NSCoder;
 @class NSBundle;
 
 /// A <code>ViewController</code> responsible for the UI and functionality of the checkout process.
 SWIFT_CLASS("_TtC20CheckoutLibraryTcode22CheckoutViewController")
 @interface CheckoutViewController : UIViewController
+/// The delegate providing callbacks for payment token generation.
+@property (nonatomic, weak) id <CheckoutViewControllerDelegate> _Nullable delegate;
+/// Initializes a <code>CheckoutViewController</code> with the default UI properties.
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Initializes a <code>CheckoutViewController</code> with custom UI properties.
+/// \param logoImage The logo to be displayed in the checkout view. If missing, the default logo is being used.
+///
+/// \param payButtonProperties The properties of the Pay button in the checkout view.
+///
+- (nonnull instancetype)initWithLogoImage:(UIImage * _Nonnull)logoImage payButtonProperties:(PayButtonProperties * _Nonnull)payButtonProperties OBJC_DESIGNATED_INITIALIZER;
 /// Initializes a <code>CheckoutViewController</code> with the default UI properties.
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+/// A protocol providing updates on payment tokens generation.
+SWIFT_PROTOCOL("_TtP20CheckoutLibraryTcode30CheckoutViewControllerDelegate_")
+@protocol CheckoutViewControllerDelegate
+/// Called when a payment token has been generated using the payment details provided in the <code>CheckoutViewController</code>.
+/// \param token The unique token of the payment.
+///
+/// \param viewController The <code>CheckoutViewController</code> used for collecting payment method details.
+///
+- (void)didGeneratePaymentToken:(NSString * _Nonnull)token viewController:(CheckoutViewController * _Nonnull)viewController;
+/// Called when a payment token generation fails.
+/// \param error An error describing the reason of the failure.
+///
+- (void)tokenGenerationFailedWith:(NSError * _Nonnull)error;
+@end
+
+@class UIColor;
+@class NSNumber;
+@class UIFont;
+
+/// Pay button visual attributes.
+SWIFT_CLASS("_TtC20CheckoutLibraryTcode19PayButtonProperties")
+@interface PayButtonProperties : NSObject
+/// Initializes the custom UI for the Pay button of the <code>CheckoutViewController</code>.
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Initializes the custom UI for the Pay button of the <code>CheckoutViewController</code>.
+/// \param size The size of the button.
+///
+/// \param color The size of the button.
+///
+/// \param cornerRadius The corner radius value for button’s edges.
+///
+/// \param font The font used for the button’s title.
+///
+/// \param fontSize The font size used for the button’s title.
+///
+/// \param fontWeight The weight of the font used for the button’s title.
+///
+/// \param fontColor The color of the button’s title.
+///
+- (nonnull instancetype)initWithSize:(CGSize)size color:(UIColor * _Nonnull)color cornerRadius:(CGFloat)cornerRadius font:(UIFont * _Nonnull)font fontSize:(CGFloat)fontSize fontWeight:(UIFontWeight)fontWeight fontColor:(UIColor * _Nonnull)fontColor OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
