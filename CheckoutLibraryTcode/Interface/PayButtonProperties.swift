@@ -4,7 +4,7 @@ import Foundation
 import UIKit
 
 /// Pay button visual attributes.
-public struct PayButtonProperties {
+@objc public class PayButtonProperties: NSObject {
 
     var size: CGSize
     var color: UIColor
@@ -24,13 +24,13 @@ public struct PayButtonProperties {
     ///   - fontSize: The font size used for the button's title.
     ///   - fontWeight: The weight of the font used for the button's title.
     ///   - fontColor: The color of the button's title.
-    public init(size: CGSize = CGSize(width: 120, height: 44),
-                color: UIColor = .black,
-                cornerRadius: CGFloat = 8,
-                font: UIFont = UIFont(name: "HelveticaNeue-Medium", size: 17)!,
-                fontSize: CGFloat = 16,
-                fontWeight: UIFont.Weight = .medium,
-                fontColor: UIColor = .white) {
+    @objc public init(size: CGSize = CGSize(width: 120, height: 44),
+                      color: UIColor = .black,
+                      cornerRadius: CGFloat = 8,
+                      font: UIFont = UIFont(name: "HelveticaNeue-Medium", size: 17)!,
+                      fontSize: CGFloat = 16,
+                      fontWeight: UIFont.Weight = .medium,
+                      fontColor: UIColor = .white) {
         self.size = size
         self.color = color
         self.cornerRadius = cornerRadius

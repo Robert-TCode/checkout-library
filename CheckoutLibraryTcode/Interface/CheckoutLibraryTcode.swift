@@ -3,7 +3,7 @@
 import Foundation
 
 /// The entry point of the `CheckoutLibraryTcode` library.
-public class CheckoutLibraryTcode {
+@objc public class CheckoutLibraryTcode: NSObject {
 
     // MARK: Properties
 
@@ -12,13 +12,13 @@ public class CheckoutLibraryTcode {
 
     private static let shared = CheckoutLibraryTcode()
 
-    private init() { }
+    private override init() { }
 
     // MARK: Configuration
 
     /// Configured the Checkout library with a unique client token.
     /// - Parameter clientToken: The client token to be used for payment token generation.
-    public static func configure(clientToken: String) {
+    @objc public static func configure(clientToken: String) {
         shared.clientToken = clientToken
 
         let jwt = JWTDecoder.decode(jwtToken: clientToken)

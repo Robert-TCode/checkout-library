@@ -4,7 +4,7 @@ import Foundation
 import UIKit
 
 /// A `ViewController` responsible for the UI and functionality of the checkout process.
-public class CheckoutViewController: UIViewController {
+@objc public class CheckoutViewController: UIViewController {
 
     // MARK: Properties
 
@@ -18,7 +18,7 @@ public class CheckoutViewController: UIViewController {
     private let payButtonProperties: PayButtonProperties
 
     /// The delegate providing callbacks for payment token generation.
-    public weak var delegate: CheckoutViewControllerDelegate?
+    @objc public weak var delegate: CheckoutViewControllerDelegate?
 
     // MARK: Intialization and Lifecycle
 
@@ -26,8 +26,8 @@ public class CheckoutViewController: UIViewController {
     /// - Parameters:
     ///   - logoImage: The logo to be displayed in the checkout view. If missing, the default logo is being used.
     ///   - payButtonProperties: The properties of the Pay button in the checkout view. If missing, the default properties are being used.
-    public init(logoImage: UIImage? = nil,
-                payButtonProperties: PayButtonProperties = PayButtonProperties()) {
+    @objc public init(logoImage: UIImage? = nil,
+                      payButtonProperties: PayButtonProperties = PayButtonProperties()) {
         if let validLogo = logoImage {
             self.logoImage = validLogo
         } else {
@@ -48,7 +48,7 @@ public class CheckoutViewController: UIViewController {
     }
 
     /// Initializes a `CheckoutViewController` with the default UI properties.
-    required init?(coder: NSCoder) {
+    @objc required init?(coder: NSCoder) {
         self.logoImage = UIImage(named: "default-logo")!
         self.payButtonProperties = PayButtonProperties()
 
