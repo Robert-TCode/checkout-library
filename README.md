@@ -61,6 +61,6 @@ Notes on distribution:
 - Distribution via Carthage can be done using the new "binary" with hosted source code file.
 - Distribution via SPM can be easily done with the functionality provided by GitHub (releases).
 
-Distribution as XCFramework via Cocoapods can be done running the following methods in terminal:
+Distribution as XCFramework via Cocoapods can be done running the following methods in terminal after the XCFramework was uploaded on a public repo.
 - `pod spec lint CheckoutLibraryTcode.podspec`
 - `pod trunk push CheckoutLibraryTcode.podspec`
