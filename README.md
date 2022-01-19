@@ -1,5 +1,6 @@
 ## Sample Checkout library using Swift and Primer's API.
 
+Note: This is just a sample and is not meant for production usage.
 
 ### Integration Documentation
 
@@ -64,3 +65,10 @@ Notes on distribution:
 Distribution as XCFramework via Cocoapods can be done running the following methods in terminal after the XCFramework was uploaded on a public repo.
 - `pod spec lint CheckoutLibraryTcode.podspec`
 - `pod trunk push CheckoutLibraryTcode.podspec`
+
+
+### What could be improved further
+
+- Refine architecture around the `CardView` UI by using a `CardNumberTextFieldHandler` instead of `CardNumberTextFieldDelegate`, that would itself have the properties of returning the `cardType` and other useful information, as well as processing the validity of the input. This would then remove one layer of complexity and keep the logic better separated.
+- Add the possibility to customise further the UI in the `CheckoutViewController` with some predefined background/card types.
+- See other comments in the codebase
